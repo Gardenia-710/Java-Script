@@ -30,7 +30,7 @@ function start(){
 function myCheck(){
     var flag = false; // 選択されているか否かを判定するフラグ
 
-   //　ラジオボタンの数だけ判定を繰り返す（ボタンを表すインプットタグがあるので１引く）
+   //ラジオボタンの数だけ判定を繰り返す（ボタンを表すインプットタグがあるので１引く）
     for(var i=0; i<document.form1.player.length;i++){
 
         // i番目のラジオボタンがチェックされているかを判定
