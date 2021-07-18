@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script type="text/javascript" src="script/script.js"></script>
+<title>わーどうるふ</title>
+</head>
+<header>
+<h3>わーどうるふおふらいん</h3>
+</header>
+<body>
+<div class="contents" id="output1"><h1>プレイ人数を選択してください。</h1></div>
+<div class="contents" id="output2" style="display: none;"><h2></h2></div>
+<div id="start" style="display: block;">
+  <form name="form1">
+  	<input name="player" type="radio" value=3 class="btn">3人プレイ</br>
+  	<input name="player" type="radio" value=4 class="btn">4人プレイ</br>
+    <input name="player" type="radio" value=5 class="btn">5人プレイ</br>
+    <input type="button" value="スタート" onclick="myCheck()" class="square_btn">
+  </form>
+</div>
+
+<div id="player_check" style="display: none;">
+  <form name="form2">
+    <input type="button" value="はい" onclick="theme_tel()" class="square_btn">
+  </form>
+</div>
+
+<div id="tel" style="display: none;">
+  <form name="form3">
+    <input type="button" value="次の人へ" onclick="p_check()" class="square_btn">
+  </form>
+</div>
+
+<div id="talk" style="display: none;">
+  <form name="form4">
+    <input type="button" id="s_talk"value="議論開始" onclick="talk_set()" class="square_btn">
+  </form>
+</div>
+
+<div id="timer" style="display: none;">
+ <p>
+ <span id="min">0</span>分
+ <span id="sec">0</span>秒
+ </p>
+ </div>
+<input type="button" id="skp" value="スキップ" onclick="skp()" style="display: none;" class="square_btn">
+<input type="button" id="ans" value="答えを見る" onclick="ans()" style="display: none;" class="square_btn">
+<input type="button" id="fin" value="次へ" onclick="fin_n()" style="display: none;" class="square_btn">
+<input type="button" id="nxt" value="再戦" onclick="n()" style="display: none;" class="square_btn">
+<input type="button" id="exit" value="終了" onclick="e()" style="display: none;" class="square_btn">
+</body>
+</html>
